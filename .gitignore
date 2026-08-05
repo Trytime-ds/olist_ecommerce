@@ -1,0 +1,31 @@
+# Power BI
+*.pbix
+*.pbit
+*.pbip
+*.DataModel
+
+# Raw / processed data
+data/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.db
+*.sqlite
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local configs
+*.log
+*.tmp
