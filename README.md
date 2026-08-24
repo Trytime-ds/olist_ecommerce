@@ -142,21 +142,31 @@ The final Power BI report contains five analytical pages.
 
 Executive KPIs, monthly revenue trend, leading categories, and geographic revenue concentration.
 
+![Executive Overview](images/01_executive_overview.png)
+
 ### 2. Sales & Category Performance
 
 Category revenue, order volume, items sold, category AOV, average item price, freight value, and revenue share.
+
+![Sales & Category Performance](images/02_sales_category_performance.png)
 
 ### 3. Customer Experience
 
 Review coverage, positive/low review rates, review distribution, and the relationship between delivery status and customer satisfaction.
 
+![Customer Experience](images/03_customer_experience.png)
+
 ### 4. Delivery & Logistics
 
 Known deliveries, late orders, on-time rate, delay severity, monthly delivery performance, and state-level logistics performance. State rankings use a minimum-volume threshold to avoid over-prioritizing very small markets.
 
+![Delivery & Logistics](images/04_delivery_logistics.png)
+
 ### 5. Seller Performance
 
 Seller revenue, order volume, AOV, delivery reliability, review score, and a seller volume vs. late-delivery scatterplot.
+
+![Seller Performance](images/05_seller_performance.png)
 
 ## Executive insights
 
@@ -276,6 +286,11 @@ The project includes explicit checks for:
 ├── notebooks/
 │   └── README.md
 └── images/
+    ├── 01_executive_overview.png
+    ├── 02_sales_category_performance.png
+    ├── 03_customer_experience.png
+    ├── 04_delivery_logistics.png
+    ├── 05_seller_performance.png
     └── README.md
 ```
 
@@ -293,7 +308,8 @@ The project includes explicit checks for:
 [✓] Seller / delivery / customer-experience QA
 [✓] Executive insights
 [✓] Business recommendations
+[✓] Final dashboard screenshots
 [✓] Portfolio documentation
 ```
 
-The Power BI `.pbix` file is kept local by default and excluded through `.gitignore`. Final dashboard screenshots are stored separately in `images/` for portfolio presentation.
+The Power BI `.pbix` file is kept local by default and excluded through `.gitignore`. Final dashboard screenshots are stored in `images/` for portfolio presentation.
