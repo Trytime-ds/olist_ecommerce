@@ -1,12 +1,13 @@
 # Notebooks
 
-This folder is reserved for auxiliary Python notebooks.
+Python / pandas was used only as an auxiliary troubleshooting layer during data ingestion, especially for inspecting problematic CSV content and review-text loading issues.
 
-In this project, Python/pandas can be used for:
+The core analytical workflow is intentionally SQL-first:
 
-- Inspecting problematic CSV files.
-- Cleaning text/encoding issues.
-- Re-exporting clean CSV files before PostgreSQL import.
-- Automating local data loading if needed.
+```text
+Raw CSVs → PostgreSQL → SQL analytical views → Power BI → DAX → Business insights
+```
 
-The main analytical transformations are intentionally kept in SQL to better match a BI/Data Analyst workflow.
+This design keeps the portfolio focused on a BI / Data Analyst workflow while still demonstrating that Python can support ingestion, data inspection, encoding troubleshooting, and automation when required.
+
+No notebook is required to reproduce the final analytical model because the production transformations and validation logic are documented in the `sql/` folder.
